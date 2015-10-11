@@ -33,7 +33,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.WebUtils;
 
 @SpringBootApplication
-@RestController
+@Controller
 @EnableRedisHttpSession
 public class UiApplication {
 
