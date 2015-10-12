@@ -9,7 +9,14 @@ angular.module('auth', []).factory(
 					if (!auth.authenticated) {
 						$location.path(auth.loginPath);
 					}
-				}					
+				} else {
+                    //navigate to home page when authenticated user click login
+                    //even work if the user types in the login route explicitly into the browser
+                    if (auth.authenticated) {
+                        //auth.path = auth.homePath;
+                        $location.path(auth.homePath);
+                    }
+				}
 			}
 
 			var auth = {
