@@ -71,8 +71,7 @@ public class UiApplication {
 			// @formatter:off
 			http.httpBasic().and()
 					.authorizeRequests()
-					.antMatchers("/index.html", "/", "/login", "/message", "/home")
-					.permitAll()
+					.antMatchers("/index.html", "/", "/login", "/message").permitAll()
 					.anyRequest().hasRole("USER");
 			// @formatter:on
 		}

@@ -4,7 +4,7 @@ angular.module('hello', []).config(function($httpProvider) {
 
 }).controller('navigation',
 
-function($scope, $http) {
+function($scope, $http, $window) {
 
 	var authenticate = function(credentials, callback) {
 
@@ -18,6 +18,7 @@ function($scope, $http) {
 		$http.get('user', {
 			headers : headers
 		}).success(function(data) {
+			$window.location.href = '/ui';
 			if (data.name) {
 				$scope.authenticated = true;
 				$scope.user = data.name
@@ -26,6 +27,7 @@ function($scope, $http) {
 			}
 			callback && callback(true);
 		}).error(function() {
+			$window.location.href = '/ui/login';
 			$scope.authenticated = false;
 			callback && callback(false);
 		});

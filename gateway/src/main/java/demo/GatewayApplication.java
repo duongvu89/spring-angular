@@ -41,7 +41,7 @@ import org.springframework.web.util.WebUtils;
 @EnableRedisHttpSession
 @EnableZuulProxy
 public class GatewayApplication {
-
+	
 	@RequestMapping("/user")
 	@ResponseBody
 	public Map<String, Object> user(Principal user) {
@@ -82,7 +82,7 @@ public class GatewayApplication {
 				.logout()
 			.and()
 				.authorizeRequests()
-					.antMatchers("/index.html", "/login", "/").permitAll()
+					.antMatchers("/index.html", "/login", "/", "/ui/index.html", "/ui/login", "/ui/", "/ui/message", "/ui/js/**", "/ui/css/**").permitAll()
 					.anyRequest().authenticated()
 			.and()
 				.csrf().csrfTokenRepository(csrfTokenRepository())
