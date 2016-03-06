@@ -28,6 +28,7 @@
         <module name="double-ui" />
         <module name="gateway" />
         <module name="modular" />
+        <module name="resource" />
         <module name="ui" />
         <module name="ui-modular" />
       </profile>
@@ -38,27 +39,20 @@
         <processorPath useClasspath="true" />
         <module name="double-resource" />
       </profile>
-      <profile default="false" name="Annotation profile for resource" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="resource" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="admin" target="1.7" />
+      <module name="admin" target="1.8" />
       <module name="double-admin" target="1.7" />
       <module name="double-gateway" target="1.7" />
       <module name="double-resource" target="1.7" />
       <module name="double-ui" target="1.7" />
-      <module name="gateway" target="1.7" />
+      <module name="gateway" target="1.8" />
       <module name="modular" target="1.7" />
       <module name="pairs-double" target="1.5" />
-      <module name="resource" target="1.7" />
+      <module name="resource" target="1.8" />
       <module name="spring-angular" target="1.5" />
-      <module name="ui" target="1.7" />
-      <module name="ui-modular" target="1.7" />
+      <module name="ui" target="1.8" />
+      <module name="ui-modular" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

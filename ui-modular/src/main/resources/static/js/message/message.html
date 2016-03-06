@@ -3,3 +3,46 @@
 	<p>The ID is {{greeting.id}}</p>
 	<p>The content is {{greeting.content}}</p>
 </div>
+
+<h3>Basic Smart-Table Starter</h3>
+<table st-table="users" class="table table-striped" st-safe-src="users">
+	<thead>
+	<tr>
+		<th st-sort="firstName">First Name</th>
+		<th st-sort="lastName">Last Name</th>
+		<th st-sort="birthDate">Birth Date</th>
+		<th st-sort="gender">Gender</th>
+		<th st-sort="email">Email</th>
+		<th></th>
+	</tr>
+	<tr>
+		<th>
+			<input st-search="firstName" placeholder="search for firstname" class="input-sm form-control" type="search"/>
+		</th>
+		<th colspan="3">
+			<input st-search placeholder="global search" class="input-sm form-control" type="search"/>
+		</th>
+		<th>
+			<input st-search="{{selectedPredicate}}" placeholder="bound predicate" class="input-sm form-control" type="search"/>
+		</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="row in users">
+		<td>{{row.firstName}}</td>
+		<td>{{row.lastName}}</td>
+		<td>{{row.birthDate}}</td>
+		<td>{{row.gender}}</td>
+		<td>{{row.email}}</td>
+		<td>
+			<button type="button" ng-click="removeRow(row)" class="btn btn-sm btn-danger">
+				<i class="glyphicon glyphicon-remove-circle">
+				</i>
+			</button>
+		</td>
+	</tr>
+	</tbody>
+</table>

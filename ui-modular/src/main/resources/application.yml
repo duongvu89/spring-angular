@@ -1,6 +1,7 @@
 security:
   user:
     password: password
+  sessions: NEVER
 logging:
   level:
     org.springframework.security: DEBUG

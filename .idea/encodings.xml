@@ -6,5 +6,6 @@
     <file url="file://$PROJECT_DIR$/resource" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ui" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ui-modular" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ui-modular/src/main/resources/static/js/smart-table.js" charset="windows-1252" />
   </component>
 </project>
