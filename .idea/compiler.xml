@@ -33,26 +33,26 @@
         <module name="ui-modular" />
       </profile>
       <profile default="false" name="Annotation profile for double-resource" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="double-resource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="admin" target="1.8" />
+      <module name="admin" target="1.6" />
       <module name="double-admin" target="1.7" />
       <module name="double-gateway" target="1.7" />
       <module name="double-resource" target="1.7" />
       <module name="double-ui" target="1.7" />
-      <module name="gateway" target="1.8" />
+      <module name="gateway" target="1.6" />
       <module name="modular" target="1.7" />
       <module name="pairs-double" target="1.5" />
-      <module name="resource" target="1.8" />
+      <module name="resource" target="1.6" />
       <module name="spring-angular" target="1.5" />
-      <module name="ui" target="1.8" />
-      <module name="ui-modular" target="1.8" />
+      <module name="ui" target="1.6" />
+      <module name="ui-modular" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
